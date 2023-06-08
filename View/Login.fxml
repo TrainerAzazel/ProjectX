@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="980.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+   <children>
+      <AnchorPane layoutX="841.0" layoutY="304.0" />
+      <TextField fx:id="emailAddress" layoutX="545.0" layoutY="321.0" prefHeight="35.0" prefWidth="250.0" promptText="Email address*" />
+      <Hyperlink fx:id="ForgotPass" layoutX="670.0" layoutY="427.0" text="Forgot your password?" />
+      <PasswordField fx:id="passwordField" layoutX="546.0" layoutY="380.0" prefHeight="35.0" prefWidth="250.0" promptText="Password*" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="232.0" layoutX="-1.0" layoutY="-18.0" stroke="BLACK" strokeType="INSIDE" width="1302.0" />
+      <Button fx:id="createAccount" graphicTextGap="0.0" layoutX="560.0" layoutY="539.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="200.0">
+               <image>
+                  <Image url="@FinalProject/FinalProk/src/Downloads/crtAcc.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="signIn" layoutX="559.0" layoutY="461.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="184.0">
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="200.0">
+               <image>
+                  <Image url="@FinalProject/FinalProk/src/Downloads/signInLoginPage.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Text layoutX="664.0" layoutY="522.0" strokeType="OUTSIDE" strokeWidth="0.0" text="or" />
+      <Label fx:id="signIn" layoutX="562.0" layoutY="299.0" text="username and password does not match!" textFill="RED" />
+   </children>
+</Pane>
